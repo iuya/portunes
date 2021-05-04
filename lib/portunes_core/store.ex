@@ -21,7 +21,7 @@ defmodule PortunesCore.Store do
   @adapter Application.compile_env(:portunes_core, [:store, :adapter], Stores.Stub)
 
   @spec get_property(repo_name, property_name, opts) :: {:ok, term} | error_tuple()
-  defdelegate get_property(property_name, repo_name, opts \\ %{}), to: @adapter
+  defdelegate get_property(repo_name, property_name, opts \\ %{}), to: @adapter
 
   @spec get_snapshot(String.t(), opts) :: {:ok, Snapshot.t()} | error_tuple
   defdelegate get_snapshot(repo_name, opts \\ %{}), to: @adapter

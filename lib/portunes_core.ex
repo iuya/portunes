@@ -32,6 +32,7 @@ defmodule PortunesCore do
   @doc """
   Returns the property from the requested cofiguration repository
   """
+
   @spec get_property(repo_name, property_name, opts) :: ok_property | error_tuple
   defdelegate get_property(repo_name, property_name, opts \\ %{}), to: Store
 
