@@ -18,3 +18,27 @@ The last element of this config server/client pair is having a way for the serve
 
 # Architecture
 ![an image of portunes' architecture done in google drive's sheets by a artististically deaf dev](docs/images/architectural-summary.svg)
+
+
+# PortunesCore
+
+**TODO: Add description**
+
+## Installation
+
+If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+by adding `portunes_core` to your list of dependencies in `mix.exs`:
+
+```elixir
+def deps do
+  [
+    {:portunes_core, "~> 0.1.0"}
+  ]
+end
+```
+
+Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
+and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
+be found at [https://hexdocs.pm/portunes_core](https://hexdocs.pm/portunes_core).
+
+
