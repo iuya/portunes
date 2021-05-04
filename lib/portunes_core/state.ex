@@ -20,6 +20,8 @@ defmodule PortunesCore.State do
          false <- last_version == current_version,
          :ok <- Store.put_snapshot(repo_name, snapshot) do
       Pusher.notify_update(repo_name, last_version)
+    else
+      true -> :ok
     end
 
     # Todo handle errors

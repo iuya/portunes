@@ -8,11 +8,12 @@ defmodule PortunesCore.Stores.Stub do
   alias PortunesCore.Snapshot
 
   @impl true
-  def get_property(property_name, _repo_name, _opts) do
+  def get_property(_repo_name, property_name, _opts) do
     case property_name do
       "map" -> {:ok, %{}}
       binary when binary in ["string", "binary"] -> {:ok, "PROPERTY_VALUE"}
       "list" -> {:ok, []}
+      other -> {:ok, other}
     end
   end
 
